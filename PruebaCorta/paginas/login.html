@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../estilos/estilos_base.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="aboutus.html">Acerca de nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="carousel">
+           <!-- <p>Este es el carousel de imagenes</p> -->
+           <img src="../imagenes/log0.png" class="elemento-carousel activo"/> 
+         <img src="../imagenes/log0.png" class="elemento-carousel activo"/>
+           <!--Este gif se despliega como una imagen animada /-->
+           <!-- <img src="../imagenes/log0.png" class="gif"> /-->
+        
+           <!-- <p>Este gif se mostrará solo si hay internet</p> -->
+          <!-- <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">-->
+
+
+            
+        </section>
+
+        <main id="inicio">
+
+            <h1>Iniciar Sesión</h1>
+            
+        <div class="login-box">
+    <h2>Digite su nombre de usuario y contraseña</h2>
+
+    <input type="text" id="usuario" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+
+    <button onclick="login()">Entrar</button>
+</div>
+
+<script>
+    function login() {
+        let usuario = document.getElementById("usuario").value;
+        let password = document.getElementById("password").value;
+
+        // Usuario y contraseña de prueba
+        if (usuario === "admin" && password === "1234") {
+            alert("Login correcto ✅");
+        } else {
+            alert("Usuario o contraseña incorrectos ❌");
+        }
+    }
+</script>
+
+                   </main>
+
+
+    </body>
+    <script src="../javascript/script-carousel.js"></script>
+</html>
